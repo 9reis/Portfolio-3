@@ -73,6 +73,15 @@ section {
     box-shadow: none;
 }
 
+.heading {
+    text-align: center;
+    margin:0 6rem;
+    font-size: 4rem;
+    padding: 1rem;
+    border-bottom: .1rem solid #FFF4;
+    color: #FFF;
+}
+
 header {
     position: fixed;
     top:0;
@@ -179,9 +188,64 @@ header .navbar ul li a:hover{
     color: #EEE;
 }
 
+/*********************************************************************************\
+                                    ABOUT
+\*********************************************************************************/
 
+.about .row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 1rem 0;
+}
 
+.about .row .info {
+    flex: 1 1 48rem;
+    padding: 2rem 1rem;
+    padding-left: 6rem;
+}
 
+.about .row .info h3 {
+    font-size: 2rem;
+    color: var(--yellow);
+    padding: 1rem 0;
+    font-weight: normal;
+}
+
+.about .row .info h3 span {
+    color: #EEE;
+    padding: 0 .5rem;
+}
+
+.about .row .counter {
+    flex: 1 1 48rem;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.about .row .counter .box {  
+    width: 20rem;
+    background: #222;
+    text-align: center;
+    padding: 2rem;
+    margin: 2rem;
+}
+
+.about .row .counter .box span {
+    font-size: 4rem;
+    color: var(--yellow);
+}
+
+.about .row .counter .box h3 {
+    font-size: 2rem;
+    color: #FFF;
+}
+
+/*********************************************************************************\
+                                    HEADER
+\*********************************************************************************/
 
 
 
@@ -234,5 +298,13 @@ header .navbar ul li a:hover{
 @media (max-width:400px){
     header{
         width: 100vw;
+    }
+
+    .heading{
+        margin: 0 3rem;
+    }
+
+    .about .row .counter .box {
+        width: 100%;
     }
 }
