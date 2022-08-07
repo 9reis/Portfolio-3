@@ -48,7 +48,7 @@ body{
 }
 
 section {
-    min-height: 100vh;
+    min-height: 90vh;
     padding: 1rem;
 }
 
@@ -226,7 +226,7 @@ header .navbar ul li a:hover{
 }
 
 .about .row .counter .box {  
-    width: 20rem;
+    width: 60%;
     background: #222;
     text-align: center;
     padding: 2rem;
@@ -250,13 +250,14 @@ header .navbar ul li a:hover{
 .education .box-container {
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    flex-wrap: wrap;
+    justify-content: space-evenly;
+    flex-wrap:wrap;
     padding: 1rem 0;
     padding-left: 3rem;
 }
 
 .education .box-container .box {
+    
     width: 27rem;
     margin: 4rem 1rem;
     padding-left: 4rem;
@@ -270,6 +271,7 @@ header .navbar ul li a:hover{
     color: #FFF;
     border-radius: 5rem;
     padding: .5rem 2.5rem;
+    display: block;
 }
 
 .education .box-container .box h3 {
